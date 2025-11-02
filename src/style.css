@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* --- Global --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #161922;
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+/* --- Header --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background-color: #161922;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #2d2e32;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+header nav {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+header nav button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #f0f0f0;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav button:hover {
+  color: #00e0c7;
+}
+
+/* --- Main & Section Styles --- */
+main {
+  width: 100%;
+}
+
+section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  gap: 3rem;
+}
+
+/* --- Hero Section --- */
+#hero {
+  min-height: 95vh;
+}
+
+#hero .hero-info {
+  flex-basis: 55%;
+}
+
+#hero .hero-info h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+#hero .hero-info h1 span {
+  color: #00e0c7;
+}
+
+#hero .hero-info a {
+  display: inline-block;
+  background-color: #00e0c7;
+  color: #161922;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+#hero .hero-info a:hover {
+  transform: scale(1.05);
+}
+
+#hero .hero-img {
+  flex-basis: 45%;
+}
+
+#hero .hero-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Projects Section --- */
+#projects {
+  flex-direction: column;
+  justify-content: center;
+}
+
+#projects h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#projects h1 span {
+  color: #00e0c7;
+}
+
+#projects .project-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+#projects .container {
+  background-color: #2d2e32;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+#projects .container:hover {
+  transform: translateY(-10px);
+}
+
+#projects .container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- About Me Section --- */
+#about .about-info {
+  flex-basis: 50%;
+}
+
+#about .about-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#about .about-info h1 span {
+  color: #00e0c7;
+}
+
+#about .about-info p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #b0b0b0;
+}
+
+#about .about-img {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+#about .about-img img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* --- Contact Section --- */
+#contact .contact-info {
+  flex-basis: 45%;
+}
+
+#contact .contact-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#contact .contact-info h1 span {
+  color: #00e0c7;
+}
+
+#contact .contact-info img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+#contact form {
+  flex-basis: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact form label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+#contact form input,
+#contact form textarea {
+  background-color: #2d2e32;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: none;
+  border-color: #00e0c7;
+}
+
+#contact form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+#contact form button {
+  background-color: #00e0c7;
+  color: #161922;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  align-self: flex-start;
+}
+
+#contact form button:hover {
+  transform: scale(1.05);
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 2rem 5%;
+  background-color: #161922; /* Match the body background */
+  color: #b0b0b0; /* Softer text color */
+  font-size: 0.9rem;
+  border-top: 1px solid #2d2e32; /* Same separator as other sections */
+  margin-top: 2rem; /* Add some space above the footer */
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem 5%;
+  }
+
+  header nav ul {
+    margin-top: 1rem;
+    gap: 1.5rem;
+  }
+
+  section {
+    flex-direction: column !important;
+    min-height: auto;
+    padding: 3rem 5%;
+    text-align: center;
+  }
+
+  #hero {
+    flex-direction: column-reverse !important;
+  }
+
+  #hero .hero-info h1 {
+    font-size: 2.2rem;
+  }
+
+  #hero .hero-info,
+  #about .about-info,
+  #contact .contact-info,
+  #contact form {
+    flex-basis: 100%;
+  }
+
+  #projects .project-imgs {
+    grid-template-columns: 1fr;
+  }
+
+  #contact .contact-info img {
+    max-width: 60%;
+  }
+
+  #contact form button {
+    align-self: stretch;
+  }
+}
