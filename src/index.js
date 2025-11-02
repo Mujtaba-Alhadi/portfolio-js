@@ -10,6 +10,7 @@ const aboutBtn = document.querySelector(".about");
 const contactBtn = document.querySelector(".contact");
 
 window.addEventListener("load", () => Home());
+
 homeBtn.addEventListener("click", () => Home());
 projectsBtn.addEventListener("click", () => Projects());
 aboutBtn.addEventListener("click", () => About());

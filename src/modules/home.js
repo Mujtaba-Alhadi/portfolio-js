@@ -1,4 +1,5 @@
 import heroImg from "../assets/hero.svg";
+import { Contact } from "./contact";
 
 export function Home() {
   const main = document.querySelector("main");
@@ -9,11 +10,14 @@ export function Home() {
             Hi, I'm Mujtaba Alhadi <br />
             <span>Software Engineer</span>
           </h1>
-          <a href="#contact">Contact Me</a>
+          <button class="contact-me">Contact Me</button>
         </div>
         <div class="hero-img">
           <img src="${heroImg}" alt="hero-image" />
         </div>
       </section>
   `;
+
+  const contactMeBtn = main.querySelector(".contact-me");
+  contactMeBtn.addEventListener("click", () => Contact());
 }
