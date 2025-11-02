@@ -1,3 +1,3 @@
-# webpack
+# Portfolio
 
-Webpack Template
+Portfolio in JS
